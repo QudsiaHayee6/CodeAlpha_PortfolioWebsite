@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f5f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #FF7F50, #00B8A9);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #FFD700;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: #f9fafc;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact p {
+    font-size: 18px;
+    color: #333;
+}
+
+#contact a {
+    color: #FFD700;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #FF7F50;
+}
+
+/* Footer Styles */
+footer {
+    background: #00B8A9;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 16px;
+    border-top: 5px solid #FF7F50;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FF7F50;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Smaller header title */
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 28px; /* Adjust section titles */
+    }
+
+    .project-list {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center;
+    }
+
+    .project {
+        width: 90%; /* Make project cards take up more space */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media screen and (max-width: 480px) {
+    section h2 {
+        font-size: 24px; /* Smaller section titles for mobile */
+    }
+
+    section p {
+        font-size: 16px; /* Adjust text size for readability */
+    }
+
+    .project {
+        width: 100%; /* Project cards take full width */
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller header title */
+    }
+
+    header nav a {
+        font-size: 14px; /* Smaller navigation links */
+    }
+    #contact p {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    #contact a {
+        color: #FFD700;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out; /* Smooth transition */
+    }
+    
+    #contact a:hover {
+        color: #FF7F50; /* Color change on hover */
+    }
+    
+
+    footer {
+        font-size: 12px; /* Smaller footer text */
+    }
+}
